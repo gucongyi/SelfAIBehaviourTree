@@ -7,9 +7,10 @@
         private string name_;
         private ITreeNode childNode;
 
-        public InverterNode(string name)
+        public InverterNode(string name, ITreeNode childNode)
         {
             this.name_ = name;
+            this.childNode = childNode;
         }
 
         public TreeStatus tick()
